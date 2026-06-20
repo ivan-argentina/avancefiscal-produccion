@@ -21,7 +21,7 @@ import SaveIcon from "@mui/icons-material/Save";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
 import GenerarPdf from "../componentes/GenerarPdf";
-import { generarpdfU } from "../utils/generarpdfu";
+import { generarpdfU } from "../utils/generarpdfU";
 import ModalImagen from "../componentes/ModalImagen";
 
 export default function Factura() {
