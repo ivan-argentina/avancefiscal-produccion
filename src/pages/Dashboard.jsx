@@ -11,7 +11,7 @@ import {
 import { supabase } from "../hook/supabaseClient";
 import { obtenerEmpresa } from "../utils/obtenerEmpresa";
 
-const API_URL = "http://localhost:3001";
+const API_URL = "https://gestion-production-e3f6.up.railway.app";
 
 export default function Dashboard() {
   const [certificado, setCertificado] = useState(null);

@@ -49,15 +49,18 @@ export default function Facturas() {
   };
 
   const autorizarFacturaPendiente = async (factura) => {
-    const response = await fetch("http://localhost:3001/api/fiscal/autorizar", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    const response = await fetch(
+      "https://gestion-production-e3f6.up.railway.app",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          idFactura: factura.id,
+        }),
       },
-      body: JSON.stringify({
-        idFactura: factura.id,
-      }),
-    });
+    );
 
     const data = await response.json();
     const detallePdf = data.fiscal.detalle.map((item, index) => ({

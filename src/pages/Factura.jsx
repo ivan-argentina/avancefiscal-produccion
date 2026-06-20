@@ -383,7 +383,7 @@ export default function Factura() {
     }
     //Factura Electronica
     const responseFiscal = await fetch(
-      "http://localhost:3001/api/fiscal/autorizar",
+      "https://gestion-production-e3f6.up.railway.app",
       {
         method: "POST",
         headers: {
