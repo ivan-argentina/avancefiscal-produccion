@@ -4,7 +4,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import { useRef, useEffect, useState } from "react";
-import { generarpdfU } from "../utils/generarpdfu";
+import { generarpdfU } from "../utils/generarpdfU";
 import GenerarPdf from "../componentes/GenerarPdf";
 import { DataGrid } from "@mui/x-data-grid";
 import { Button } from "@mui/material";
